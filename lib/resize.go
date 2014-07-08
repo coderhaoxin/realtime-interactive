@@ -1,4 +1,4 @@
-package resize
+package lib
 
 import (
 	"errors"
