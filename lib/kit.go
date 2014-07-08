@@ -10,7 +10,7 @@ func ParseFileName(filename string) (oriFilename, formate string, width, height 
 	var strs []string
 	var extname string
 
-	debug("parse file name, filename:", filename)
+	debug("parse file name, filename: %s", filename)
 
 	if strings.Contains(filename, ".png") {
 		strs = strings.Split(filename, ".png")
@@ -25,7 +25,7 @@ func ParseFileName(filename string) (oriFilename, formate string, width, height 
 		return "", "", 0, 0, errors.New("unknown formate")
 	}
 
-	debug("parse file name, strs:", strs)
+	debug("parse file name, strs: %s", strs)
 
 	if len(strs) != 3 {
 		return "", "", 0, 0, errors.New("unknown formate")
