@@ -1,5 +1,5 @@
 ### resize
-image resize service
+image resize service base on [nfnt/resize](https://github.com/nfnt/resize)
 
 ### License
 MIT
